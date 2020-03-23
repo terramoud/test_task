@@ -1,3 +1,33 @@
+html {
+  font-size: 14px;
+}
+
 body {
   box-sizing: border-box;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60rem;
+}
+
+.goods {
+  background: red;
+  display: flex;
+  width: 80%;
+  border: 2px solid grey;
+  border-radius: .5rem;
+}
+
+.card-product {
+
+}
+
+.card-product__image {
+  background: url('images/angle_grinder.jpg') grey no-repeat 50% 50%;
+  width: 100px;
+  height: 100px;
+}
+

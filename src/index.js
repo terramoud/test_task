@@ -2,4 +2,4 @@
 require('./index.html');
 require('./index.scss');
 
-console.log(test);
+console.log("test");
