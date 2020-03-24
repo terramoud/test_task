@@ -13,6 +13,7 @@ body {
   margin: auto;
 }
 
+
 .ghost-menu {
   position: fixed;
   display: flex;
@@ -24,7 +25,6 @@ body {
   &__nav {
     width: 20%;
     cursor: pointer;
-    //background: red;
   }
   &__view-tables {
     width: 20%;
@@ -44,6 +44,7 @@ body {
 }
 
 .menu {
+  padding-top: .5rem;
   &__item {
     height: 2rem;
     display: flex;
@@ -58,7 +59,6 @@ body {
   }
   &__extra {
     display: none;
-    //border: 1px solid grey;
     &_theme_visible {
       display: block;
     }
@@ -80,10 +80,6 @@ body {
   color: grey;
 }
 
-
-
-menu__extra
-
 .extra-nav {
   margin-top: 2rem;
   display: none;
@@ -92,6 +88,10 @@ menu__extra
 .extra-menu {
   z-index: 999;
   background: white;
+  &__item {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
   &_theme_grey {
     background: lightgrey;
   }
@@ -136,6 +136,27 @@ menu__extra
   .container {
     max-width: none;
   }
+
+  .nav-menu {
+    padding-top: 1rem;
+  }
+
+  .menu {
+    &__item {
+      height: auto;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .extra-menu {
+    &__item {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
   .card-product {
     flex-basis: 100%;
   }
@@ -145,6 +166,27 @@ menu__extra
   .container {
     max-width: none;
   }
+
+  .nav-menu {
+    padding-top: 1.5rem;
+  }
+
+  .menu {
+    &__item {
+      height: auto;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .extra-menu {
+    &__item {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
   .goods {
     max-width: 360px;
   }
@@ -156,6 +198,9 @@ menu__extra
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .container {
     max-width: 540px;
+  }
+  .nav-menu {
+    padding-top: 1rem;
   }
   .card-product {
     width: 50%;
