@@ -13,6 +13,90 @@ body {
   margin: auto;
 }
 
+.ghost-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100%;
+  background: transparent;
+  &__nav {
+    width: 20%;
+    cursor: pointer;
+    //background: red;
+  }
+  &__view-tables {
+    width: 20%;
+    background: #000;
+    cursor: pointer;
+  }
+}
+
+
+.nav-menu {
+  position: absolute;
+  display: none;
+  background: white;
+  &_active {
+    display: block;
+  }
+}
+
+.menu {
+  &__item {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+  &__link {
+    padding-right: 3rem;
+    background: white;
+    &_theme_grey {
+      background: lightgrey;
+    }
+  }
+  &__extra {
+    display: none;
+    //border: 1px solid grey;
+    &_theme_visible {
+      display: block;
+    }
+  }
+}
+.menu__item:nth-child(1) .menu__extra .extra-menu .extra-menu__link {
+  color: blue;
+}
+.menu__item:nth-child(2) .menu__extra .extra-menu .extra-menu__link {
+  color: green;
+}
+.menu__item:nth-child(3) .menu__extra .extra-menu .extra-menu__link {
+  color: red;
+}
+.menu__item:nth-child(4) .menu__extra .extra-menu .extra-menu__link {
+  color: orange;
+}
+.menu__item:nth-child(5) .menu__extra .extra-menu .extra-menu__link {
+  color: grey;
+}
+
+
+
+menu__extra
+
+.extra-nav {
+  margin-top: 2rem;
+  display: none;
+}
+
+.extra-menu {
+  z-index: 999;
+  background: white;
+  &_theme_grey {
+    background: lightgrey;
+  }
+}
+
 .goods {
   box-sizing: border-box;
   display: flex;
@@ -30,28 +114,23 @@ body {
   width: 25%;
   box-sizing: border-box;
   padding: 0 .5rem 1rem .5rem;
+  &__image {
+    background: url('images/angle_grinder.jpg') grey no-repeat 50% 50%;
+    height: 225px;
+  }
+  &__link {
+    text-decoration: none;
+    color: orange;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
-
-.card-product__image {
-  background: url('images/angle_grinder.jpg') grey no-repeat 50% 50%;
-  height: 225px;
-}
-
-.card-product__link {
-  text-decoration: none;
-  color: orange;
-}
-
-.card-product__footer {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card-product__price {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
 
 @media only screen and (max-width: 320px) {
   .container {
@@ -96,12 +175,14 @@ body {
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
   .container {
     max-width: 960px;
+    height: 1500px;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .container {
     max-width: 1140px;
+    height: 1500px;
   }
 
 }
@@ -110,12 +191,14 @@ body {
 @media only screen and (min-width: 1441px) and (max-width: 1680px) {
   .container {
     max-width: 1400px;
+    height: 1500px;
   }
 }
 
 @media only screen and (min-width: 1681px) {
   .container {
     max-width: 1680px;
+    height: 1500px;
   }
   .card-product {
     width: 20%;
