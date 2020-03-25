@@ -4,6 +4,7 @@ html {
 
 body {
   box-sizing: border-box;
+  margin-top: 0;
 }
 
 .container {
@@ -28,7 +29,6 @@ body {
   }
   &__view-tables {
     width: 20%;
-    background: #000;
     cursor: pointer;
   }
 }
@@ -114,25 +114,63 @@ body {
   width: 25%;
   box-sizing: border-box;
   padding: 0 .5rem 1rem .5rem;
+  &_theme_table-view {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    padding: 0rem .5rem 1rem .5rem;
+    width: 100%;
+    margin: auto;
+  }
   &__image {
     background: url('images/angle_grinder.jpg') grey no-repeat 50% 50%;
+    background-size: cover;
     height: 225px;
+    &_theme_table-view {
+      width: 80px;
+      height: 80px;
+      margin-right: 1rem;
+    }
+  }
+  &__header {
+    &_theme_table-view {
+      flex-basis: 180px;
+      padding-right: 1rem;
+
+    }
   }
   &__link {
     text-decoration: none;
     color: orange;
   }
+  &__description {
+    &_theme_table-view {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__specifications {
+    &_theme_table-view {
+      flex-basis: 180px;
+      padding-right: 1rem;
+    }
+  }
   &__footer {
     display: flex;
-    justify-content: space-around;
+    //justify-content: flex-end;
   }
   &__price {
     font-weight: bold;
     font-size: 1.5rem;
+    padding-right: 1rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
   .container {
     max-width: none;
   }
@@ -159,10 +197,43 @@ body {
 
   .card-product {
     flex-basis: 100%;
+    padding: .3rem;
+    &_theme_table-view {
+      flex-wrap: wrap;
+      height: auto;
+    }
+    &__image_theme_table-view {
+      width: 60px;
+      height: 60px;
+      margin: 0;
+      margin-right: 5px;
+    }
+    &__header {
+      &_theme_table-view {
+        padding: 0;
+        width: 100px;
+        overflow: hidden;
+      }
+    }
+    &__description {
+      &_theme_table-view {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    &__specifications {
+      &_theme_table-view {
+        padding: 0 5px 0 0;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 575px) {
+  html {
+    font-size: 13px;
+  }
+
   .container {
     max-width: none;
   }
@@ -189,45 +260,144 @@ body {
 
   .goods {
     max-width: 360px;
+    padding: 0;
   }
+
   .card-product {
     width: 100%;
+    padding: .3rem;
+    &_theme_table-view {
+      flex-wrap: wrap;
+      height: auto;
+      flex-basis: 270px;
+      margin: auto;
+    }
+    &__image_theme_table-view {
+      width: 80px;
+      height: 50px;
+      margin: 0;
+    }
+    &__header {
+      &_theme_table-view {
+        padding: 0;
+      }
+    }
+    &__description {
+      &_theme_table-view {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__specifications {
+      &_theme_table-view {
+        padding: 0 5px 0 0;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
+
   .container {
     max-width: 540px;
   }
   .nav-menu {
     padding-top: 1rem;
   }
+
   .card-product {
+    justify-content: center;
     width: 50%;
+    //padding: .3rem;
+    &_theme_table-view {
+      flex-wrap: wrap;
+      height: auto;
+      width: 80%;
+      margin: auto;
+      justify-content: flex-start;
+    }
+    &__image_theme_table-view {
+      width: 100px;
+      height: 60px;
+      margin: 0;
+    }
+    &__header {
+      &_theme_table-view {
+        padding: 0;
+      }
+    }
+    &__specifications {
+      &_theme_table-view {
+        padding: 0 5px 0 0;
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 12px;
+  }
+
   .container {
     max-width: 720px;
   }
 
+
   .card-product {
     width: 33.3333%;
+    //padding: .3rem;
+    &_theme_table-view {
+      height: auto;
+      width: 100%;
+    }
+    &__image_theme_table-view {
+      width: 80px;
+      height: 50px;
+      margin: 0;
+    }
+    &__header {
+      &_theme_table-view {
+        padding: 0;
+        margin: 0;
+        margin-right: 10px;
+        max-width: 8rem;
+        overflow: hidden;
+      }
+    }
+    &__description {
+      &_theme_table-view {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    &__specifications {
+      &_theme_table-view {
+        padding: 0 5px 0 0 ;
+      }
+    }
+    &__price {
+      font-size: 1rem;
+    }
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
   .container {
     max-width: 960px;
-    height: 1500px;
+    min-height: 1500px;
   }
+
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .container {
     max-width: 1140px;
-    height: 1500px;
+    min-height: 1500px;
   }
 
 }
@@ -236,16 +406,26 @@ body {
 @media only screen and (min-width: 1441px) and (max-width: 1680px) {
   .container {
     max-width: 1400px;
-    height: 1500px;
+    min-height: 1500px;
+  }
+
+  .card-product {
+
+    &_theme_table-view {
+      width: auto;
+    }
   }
 }
 
 @media only screen and (min-width: 1681px) {
   .container {
     max-width: 1680px;
-    height: 1500px;
+    min-height: 1500px;
   }
   .card-product {
     width: 20%;
+    &_theme_table-view {
+      width: auto;
+    }
   }
 }

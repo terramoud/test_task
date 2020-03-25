@@ -4,6 +4,29 @@ require('./jquery-3.4.1.min');
 require('./index.scss');
 
 
+function handleEndTableView() {
+  if (jQuery('.card-product').hasClass('card-product_theme_table-view')) {
+    jQuery('.card-product').removeClass('card-product_theme_table-view');
+    jQuery('.card-product__image').removeClass('card-product__image_theme_table-view');
+    jQuery('.card-product__header').removeClass('card-product__header_theme_table-view');
+    jQuery('.card-product__specifications').removeClass('card-product__specifications_theme_table-view');
+  } else {
+    jQuery('.card-product').addClass('card-product_theme_table-view');
+    jQuery('.card-product__image').addClass('card-product__image_theme_table-view');
+    jQuery('.card-product__header').addClass('card-product__header_theme_table-view');
+    jQuery('.card-product__description').addClass('card-product__description_theme_table-view');
+    jQuery('.card-product__specifications').addClass('card-product__specifications_theme_table-view');
+  }
+}
+
+jQuery('#ghost-menu__view-tables').mouseenter(function (event) {
+  handleEndTableView();
+  this.addEventListener("touchend", handleEndTableView, true);
+});
+
+jQuery('#ghost-menu__view-tables').focus(function (event) {
+  console.log('sdfsdf')
+});
 
 jQuery('#ghost-menu__nav').mouseenter(function (event) {
   jQuery(this).children('.nav-menu').addClass('nav-menu_active');
