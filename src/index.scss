@@ -9,6 +9,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -145,6 +146,7 @@ body {
     color: orange;
   }
   &__description {
+    display: block;
     &_theme_table-view {
       display: flex;
       justify-content: space-around;
@@ -158,13 +160,19 @@ body {
   }
   &__footer {
     display: flex;
-    //justify-content: flex-end;
   }
   &__price {
     font-weight: bold;
     font-size: 1.5rem;
     padding-right: 1rem;
   }
+}
+
+.edit-name {
+  //margin: 100px;
+  box-shadow: 0px 0px 9px grey;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -386,6 +394,10 @@ body {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1440px) {
+
+  html {
+    font-size: 14px;
+  }
   .container {
     max-width: 960px;
     min-height: 1500px;
@@ -401,7 +413,6 @@ body {
   }
 
 }
-
 
 @media only screen and (min-width: 1441px) and (max-width: 1680px) {
   .container {

@@ -9,6 +9,7 @@ function handleEndTableView() {
     jQuery('.card-product').removeClass('card-product_theme_table-view');
     jQuery('.card-product__image').removeClass('card-product__image_theme_table-view');
     jQuery('.card-product__header').removeClass('card-product__header_theme_table-view');
+    jQuery('.card-product__description').removeClass('card-product__description_theme_table-view');
     jQuery('.card-product__specifications').removeClass('card-product__specifications_theme_table-view');
   } else {
     jQuery('.card-product').addClass('card-product_theme_table-view');
