@@ -1,3 +1,6 @@
+$color-shadow-modal-edit-window: grey;
+$color-background: white;
+
 html {
   font-size: 14px;
 }
@@ -21,15 +24,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 3rem;
+  height: 0;
   width: 100%;
   background: transparent;
   &__nav {
-    width: 20%;
+    height: 3rem;
+    width: 15%;
     cursor: pointer;
+
   }
   &__view-tables {
     width: 20%;
+    height: 3rem;
     cursor: pointer;
   }
 }
@@ -38,7 +44,7 @@ body {
 .nav-menu {
   position: absolute;
   display: none;
-  background: white;
+  background: $color-background;
   &_active {
     display: block;
   }
@@ -53,7 +59,7 @@ body {
   }
   &__link {
     padding-right: 3rem;
-    background: white;
+    background: $color-background;
     &_theme_grey {
       background: lightgrey;
     }
@@ -88,7 +94,7 @@ body {
 
 .extra-menu {
   z-index: 999;
-  background: white;
+  background: $color-background;
   &__item {
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -168,11 +174,45 @@ body {
   }
 }
 
-.edit-name {
-  //margin: 100px;
-  box-shadow: 0px 0px 9px grey;
+.edit-field {
+  display: none;
+  box-shadow: 0px 0px 9px darken($color-shadow-modal-edit-window, 20%);
   border-radius: 5px;
-  padding: 5px;
+  padding: 1rem;
+  padding-top: 0.3rem;
+  width: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $color-background;
+  &_active {
+    display: block;
+  }
+  &__close-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__desrc {
+    margin-top: 5px;
+  }
+  &__submit-btn {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__close-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+    background: $color-background;
+    padding: 3px 6px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px darken($color-shadow-modal-edit-window, 20%);
+    cursor: pointer;
+    &_clicked {
+      box-shadow: 0px 0px 5px darken($color-shadow-modal-edit-window, 20%) inset;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -234,6 +274,9 @@ body {
         padding: 0 5px 0 0;
       }
     }
+  }
+  .edit-field {
+    width: 220px;
   }
 }
 
@@ -301,6 +344,9 @@ body {
         padding: 0 5px 0 0;
       }
     }
+  }
+  .edit-field {
+    width: 240px;
   }
 }
 

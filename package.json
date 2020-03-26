@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
+    "eslint": "^6.8.0",
     "file-loader": "^6.0.0",
     "html-loader": "^1.0.0",
     "postcss-loader": "^3.0.0",
@@ -41,5 +42,3 @@
     "last 3 iOS versions"
   ]
 }
-
-
