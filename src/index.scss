@@ -117,16 +117,33 @@ body {
   padding-top: 1rem;
 }
 
-.card-product {
+.draggable-element {
   width: 25%;
   box-sizing: border-box;
-  padding: 0 .5rem 1rem .5rem;
+  cursor: grab;
+  &_state_draggable {
+    box-shadow: 0px 0px 10px darkblue;
+    opacity: .2;
+    cursor: grabbing;
+  }
+  &_theme_stopping-place {
+    border: 3px dashed grey;
+
+  }
+  &_theme_table-view {
+    width: auto;
+    padding: 0rem .5rem 1rem .5rem;
+  }
+}
+
+.card-product {
+  width: auto;
+  box-sizing: border-box;
   &_theme_table-view {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 100px;
-    padding: 0rem .5rem 1rem .5rem;
     width: 100%;
     margin: auto;
   }
@@ -171,6 +188,9 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     padding-right: 1rem;
+  }
+  &__buy-button {
+    cursor: pointer;
   }
 }
 
@@ -243,9 +263,26 @@ body {
     }
   }
 
-  .card-product {
-    flex-basis: 100%;
+  .draggable-element {
+    width: 100%;
+    box-sizing: border-box;
+    cursor: grab;
     padding: .3rem;
+    &_state_draggable {
+      box-shadow: 0px 0px 10px darkblue;
+      opacity: .2;
+      cursor: grabbing;
+    }
+    &_theme_stopping-place {
+      border: 1px dashed grey;
+
+    }
+    &_theme_table-view {
+      width: auto;
+    }
+  }
+
+  .card-product {
     &_theme_table-view {
       flex-wrap: wrap;
       height: auto;
@@ -314,9 +351,24 @@ body {
     padding: 0;
   }
 
-  .card-product {
+  .draggable-element {
     width: 100%;
     padding: .3rem;
+    &_state_draggable {
+      box-shadow: 0px 0px 10px darkblue;
+      opacity: .2;
+      cursor: grabbing;
+    }
+    &_theme_stopping-place {
+      border: 1px dashed grey;
+
+    }
+    &_theme_table-view {
+      width: auto;
+    }
+  }
+
+  .card-product {
     &_theme_table-view {
       flex-wrap: wrap;
       height: auto;
@@ -324,13 +376,14 @@ body {
       margin: auto;
     }
     &__image_theme_table-view {
-      width: 80px;
+      width: 75px;
       height: 50px;
       margin: 0;
     }
     &__header {
       &_theme_table-view {
         padding: 0;
+        padding-left: 5px;
       }
     }
     &__description {
@@ -357,15 +410,29 @@ body {
 
   .container {
     max-width: 540px;
+    min-height: 1000px;
   }
   .nav-menu {
     padding-top: 1rem;
   }
 
-  .card-product {
+  .draggable-element {
     justify-content: center;
     width: 50%;
-    //padding: .3rem;
+    &_state_draggable {
+      box-shadow: 0px 0px 10px darkblue;
+      opacity: .2;
+      cursor: grabbing;
+    }
+    &_theme_stopping-place {
+      border: 2px dashed grey;
+    }
+    &_theme_table-view {
+      width: auto;
+    }
+  }
+
+  .card-product {
     &_theme_table-view {
       flex-wrap: wrap;
       height: auto;
@@ -381,6 +448,7 @@ body {
     &__header {
       &_theme_table-view {
         padding: 0;
+        padding-left: 5px;
       }
     }
     &__specifications {
@@ -398,12 +466,18 @@ body {
 
   .container {
     max-width: 720px;
+    min-height: 1000px;
   }
 
+  .draggable-element {
+    justify-content: center;
+    width: 33.3333%;
+    &_theme_table-view {
+      width: auto;
+    }
+  }
 
   .card-product {
-    width: 33.3333%;
-    //padding: .3rem;
     &_theme_table-view {
       height: auto;
       width: 100%;
@@ -416,6 +490,7 @@ body {
     &__header {
       &_theme_table-view {
         padding: 0;
+        padding-left: 5px;
         margin: 0;
         margin-right: 10px;
         max-width: 8rem;
@@ -467,7 +542,6 @@ body {
   }
 
   .card-product {
-
     &_theme_table-view {
       width: auto;
     }
@@ -479,8 +553,15 @@ body {
     max-width: 1680px;
     min-height: 1500px;
   }
-  .card-product {
+
+  .draggable-element {
     width: 20%;
+    &_theme_table-view {
+      width: auto;
+    }
+  }
+
+  .card-product {
     &_theme_table-view {
       width: auto;
     }
