@@ -1,7 +1,7 @@
 'use strict';
-require('./index.html');
-require('./jquery-3.4.1.min');
-require('./index.scss');
+import('./index.html');
+import('./jquery-3.4.1.min');
+import('./index.scss');
 
 function setModalWindowEditField() { // create function for edit name of products by mouse click on name of product
   jQuery('.card-product__link').click(function (event) {

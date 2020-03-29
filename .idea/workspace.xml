@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a20ca8b-447f-46cd-9be3-5d2d9191a6c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/node_modules/" />
@@ -20,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1541">
-              <caret line="389" column="96" selection-start-line="389" selection-start-column="96" selection-end-line="389" selection-end-column="96" />
+            <state relative-caret-position="575">
+              <caret line="200" column="64" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="64" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -41,20 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="160" column="53" selection-start-line="160" selection-start-column="53" selection-end-line="160" selection-end-column="53" />
+            <state relative-caret-position="420">
+              <caret line="162" column="52" selection-start-line="162" selection-start-column="52" selection-end-line="162" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
+            <state relative-caret-position="449">
+              <caret line="504" column="26" lean-forward="true" selection-start-line="504" selection-start-column="26" selection-end-line="504" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -101,16 +103,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dist/main.js.map" />
-        <option value="$PROJECT_DIR$/../UI_Kit/webpack.config.js" />
+        <option value="D:/UI_Kit/webpack.config.js" />
         <option value="$PROJECT_DIR$/dev-server.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/postcss.config..js" />
         <option value="$PROJECT_DIR$/postcss.config.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
-        <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/index.scss" />
       </list>
     </option>
   </component>
@@ -149,7 +151,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UI_Kit/Common.blocks/DropdownGuests/DropdownGuests.js" />
+    <property name="last_opened_file_path" value="D:/UI_Kit/Common.blocks/DropdownGuests/DropdownGuests.js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -183,12 +185,13 @@
       <workItem from="1585118734805" duration="15358000" />
       <workItem from="1585208424849" duration="25620000" />
       <workItem from="1585291353488" duration="22676000" />
-      <workItem from="1585410224803" duration="10805000" />
+      <workItem from="1585410224803" duration="11996000" />
+      <workItem from="1585465863988" duration="1599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131266000" />
+    <option name="totallyTimeSpent" value="134056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -223,7 +226,7 @@
     <entry file="file://$PROJECT_DIR$/dist/main.js" />
     <entry file="file://$PROJECT_DIR$/dist/main.css.map" />
     <entry file="file://$PROJECT_DIR$/dist/main.js.map" />
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/dev-server.js">
+    <entry file="file://D:/UI_Kit/dev-server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -264,7 +267,7 @@
     <entry file="file://$USER_HOME$/Desktop/forwebdev_bacup_or_25.03.2019/ForWebDev/app/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/Common.blocks/Checkbox/Checkbox.scss">
+    <entry file="file://D:/UI_Kit/Common.blocks/Checkbox/Checkbox.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="50" selection-end-column="1" />
@@ -283,21 +286,21 @@
         <state relative-caret-position="-690" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/package.json">
+    <entry file="file://D:/UI_Kit/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-138">
           <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/pages/index.js">
+    <entry file="file://D:/UI_Kit/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/webpack.config.js">
+    <entry file="file://D:/UI_Kit/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1035">
           <caret selection-end-column="35" />
@@ -311,21 +314,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/Common.blocks/DropdownGuests/DropdownGuests.js">
+    <entry file="file://D:/UI_Kit/Common.blocks/DropdownGuests/DropdownGuests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="68" column="41" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/Common.blocks/DropdownFacilities/DropdownFacilities.js">
+    <entry file="file://D:/UI_Kit/Common.blocks/DropdownFacilities/DropdownFacilities.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="62" column="63" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../UI_Kit/Common.blocks/Base/Variables.scss">
+    <entry file="file://D:/UI_Kit/Common.blocks/Base/Variables.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/Desktop/forwebdev_bacup_or_25.03.2019/ForWebDev/app/js/main.js">
@@ -335,7 +338,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PasrerForPricesFromExcel/src/index.html">
+    <entry file="file://D:/PasrerForPricesFromExcel/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="333" column="27" selection-start-line="333" selection-start-column="7" selection-end-line="333" selection-end-column="27" />
@@ -349,24 +352,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../PasrerForPricesFromExcel/src/parserFromExel_OR.js">
+    <entry file="file://D:/PasrerForPricesFromExcel/src/parserFromExel_OR.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2547">
           <caret line="471" column="90" selection-start-line="471" selection-start-column="90" selection-end-line="471" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="153" column="28" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="389" column="96" selection-start-line="389" selection-start-column="96" selection-end-line="389" selection-end-column="96" />
+        <state relative-caret-position="575">
+          <caret line="200" column="64" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="64" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#li#1;n#ul#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -387,8 +383,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="160" column="53" selection-start-line="160" selection-start-column="53" selection-end-line="160" selection-end-column="53" />
+        <state relative-caret-position="420">
+          <caret line="162" column="52" selection-start-line="162" selection-start-column="52" selection-end-line="162" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="504" column="26" lean-forward="true" selection-start-line="504" selection-start-column="26" selection-end-line="504" selection-end-column="26" />
         </state>
       </provider>
     </entry>
