@@ -131,13 +131,11 @@ jQuery('.draggable-element').each(function (obj) {
   this.addEventListener('dragenter', handleDragEnter, false);
   this.addEventListener('dragover', handleDragOver, false);
   this.addEventListener('drop', handleDrop, false);
-  this.addEventListener('dragend', handleDragEnd, false);
 });
 
 function handleDragStart(e) {
   lastDragTarget = this;
   jQuery(lastDragTarget).addClass('draggable-element_state_draggable');
-  e.dataTransfer.effectAllowed = 'move';
   e.dataTransfer.effectAllowed = 'move';
   e.dataTransfer.setData('text/html', jQuery(lastDragTarget).html());
 }
@@ -162,13 +160,7 @@ function handleDrop(e) {
   jQuery('.draggable-element')
     .removeClass('draggable-element_state_draggable')
     .removeClass('draggable-element_theme_stopping-place');
-  setModalWindowEditField();  //  after replacing the html code eventListeners"is deleted, thus set new event Listeners
-
-}
-
-function handleDragEnd(e) {
-  jQuery('.draggable-element')
-    .removeClass('draggable-element_state_draggable')
-    .removeClass('draggable-element_theme_stopping-place');
+  jQuery('.edit-field__close-btn').trigger('click');
   setModalWindowEditField();  //  after replacing the html code eventListeners"is deleted, thus set new event Listeners
 }
+
