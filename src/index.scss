@@ -131,7 +131,9 @@ body {
 
   }
   &_theme_table-view {
-    width: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 0rem .5rem 1rem .5rem;
   }
 }
@@ -147,19 +149,25 @@ body {
     width: 100%;
     margin: auto;
   }
+  &__image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
   &__image {
-    background: url('images/angle_grinder.jpg') grey no-repeat 50% 50%;
     background-size: cover;
     height: 225px;
+    margin: 0;
+    object-fit: cover;
     &_theme_table-view {
-      width: 80px;
+      width: 120px;
       height: 80px;
       margin-right: 1rem;
     }
   }
   &__header {
     &_theme_table-view {
-      flex-basis: 180px;
+      flex-basis: auto;
       padding-right: 1rem;
 
     }
@@ -177,7 +185,7 @@ body {
   }
   &__specifications {
     &_theme_table-view {
-      flex-basis: 180px;
+      flex-basis: auto;
       padding-right: 1rem;
     }
   }
@@ -288,15 +296,15 @@ body {
       height: auto;
     }
     &__image_theme_table-view {
-      width: 60px;
+      width: 90px;
       height: 60px;
       margin: 0;
-      margin-right: 5px;
     }
     &__header {
       &_theme_table-view {
         padding: 0;
-        width: 100px;
+        padding-left: 5px;
+        flex-basis: 130px;
         overflow: hidden;
       }
     }
@@ -376,12 +384,13 @@ body {
       margin: auto;
     }
     &__image_theme_table-view {
-      width: 75px;
-      height: 50px;
+      width: 95px;
+      height: 75px;
       margin: 0;
     }
     &__header {
       &_theme_table-view {
+        flex-basis: 160px;
         padding: 0;
         padding-left: 5px;
       }
@@ -442,11 +451,12 @@ body {
     }
     &__image_theme_table-view {
       width: 100px;
-      height: 60px;
+      height: 100px;
       margin: 0;
     }
     &__header {
       &_theme_table-view {
+        flex-basis: 200px;
         padding: 0;
         padding-left: 5px;
       }
@@ -543,7 +553,7 @@ body {
 
   .card-product {
     &_theme_table-view {
-      width: auto;
+      width: 100%;
     }
   }
 }
@@ -557,7 +567,7 @@ body {
   .draggable-element {
     width: 20%;
     &_theme_table-view {
-      width: auto;
+      width: 100%;;
     }
   }
 

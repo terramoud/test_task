@@ -158,6 +158,12 @@ function handleDrop(e) {
     jQuery(lastDragTarget).html(thisDragTarget);
     jQuery(this).html(e.dataTransfer.getData('text/html'));
   }
+
+  jQuery('.draggable-element')
+    .removeClass('draggable-element_state_draggable')
+    .removeClass('draggable-element_theme_stopping-place');
+  setModalWindowEditField();  //  after replacing the html code eventListeners"is deleted, thus set new event Listeners
+
 }
 
 function handleDragEnd(e) {
