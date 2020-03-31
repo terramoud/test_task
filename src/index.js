@@ -13,6 +13,8 @@ function setModalWindowForEditNameProduct() { // create function for edit the na
     let clickedElemPagePosition = jQuery(event.target).offset();
     // get the height of the clicked element that contain of the product name
     let clickedElemOuterHeight = jQuery(event.target).outerHeight(false);
+    // it creates a var to not call every time the jQuery function, that will be searching the element '.edit-field'
+    let modalWindow = jQuery('.edit-field');
     let modalWindowPosTop = 0;
     let modalWindowPosLeft = clickedElemPagePosition.left; // horizontal position of the modal window
 
@@ -25,7 +27,7 @@ function setModalWindowForEditNameProduct() { // create function for edit the na
       modalWindowPosTop = clickedElemPagePosition.top - modalWindow.outerHeight(true);
     }
 
-    jQuery('.edit-field')
+    modalWindow
       .addClass('edit-field_active')
       .css({
         top: modalWindowPosTop,
@@ -146,6 +148,7 @@ jQuery('.draggable-element').each(function (obj) {
 });
 
 function handleDragStart(e) { // set styles for the start dragging and save html code of the draggable element
+  jQuery('.edit-field__close-btn').trigger('click'); // is closed the "edit window" if the window is open while dragging items
   lastDragTarget = this; //  the last draggable element === current element
   jQuery(lastDragTarget).addClass('draggable-element_state_draggable');
   e.dataTransfer.effectAllowed = 'move'; // track the move elements
@@ -176,7 +179,6 @@ function handleDrop(e) { // this is implementation of draggable items
   jQuery('.draggable-element')
     .removeClass('draggable-element_state_draggable')
     .removeClass('draggable-element_theme_stopping-place');
-  jQuery('.edit-field__close-btn').trigger('click');
   setModalWindowForEditNameProduct();  //  after replacing the html code eventListeners is deleted, thus set new event listeners
 }
 
