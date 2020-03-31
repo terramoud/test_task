@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --open",
     "server": "http-server dist",
     "dev-server": "node dev-server.js",
-    "s": "node dev-server.js"
+    "ws": "node dev-server.js"
   },
   "author": "",
   "license": "ISC",
